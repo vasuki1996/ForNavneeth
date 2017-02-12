@@ -1,0 +1,100 @@
+
+<html>
+<title>Browsing books by Accession Number</title>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/lib-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/lib-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/lib-sidebar.css" />
+
+<script type="text/javascript" src="ddlevelsfiles/library.js">
+
+</script>
+
+</head>
+
+<base target="_self">
+
+<meta name="Microsoft Theme" content="copy-of-willow 111">
+
+
+<body>
+
+
+<table align="center">
+<div id="libtopmenubar" class="mattblackmenu">
+<ul>
+<li><a href="userhome.jsp"><b>HOME</b></a></li>
+<li><a href=" #" rel="libsubmenu1"><b>TRAININGS</b></a></li>
+<li><a href="#" rel="libsubmenu2"><b>QUERIES</b></a></li>
+<li><a href="#" rel="libsubmenu3"><b>REPORTS</b></a></li>
+<li><a href="#"rel="libsubmenu4"><b>MAILS</b></a></li>
+<li><a href="#" rel="libsubmenu5"><b>SECURITY</b></a></li>
+<li><a href="LogoutAction.jsp" ><b>LOGOUT</b></a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+ddlevelsmenu.setup("libtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+
+
+<!--DATA ENTRY menu-->
+
+
+<ul id="libsubmenu1" class="ddsubmenustyle">
+
+<li><a href="traing_view.jsp?role=user"><b>View Trainings</b></a></li>
+<li><a href="reqtraining.jsp"><b>Request for Trainings</b></a></li>
+</ul>
+
+
+
+<!--Crops menu-->
+
+
+<ul id="libsubmenu2" class="ddsubmenustyle">
+
+<li><a href="qryanswers.jsp"><b>View Queries</b></a></li>
+<li><a href="PostAnswer.jsp"><b>Post Query</b></a></li>
+
+</ul>
+
+
+<!--Reports menu-->
+
+
+<ul id="libsubmenu3" class="ddsubmenustyle">
+
+<li><a href="crop_season.jsp"><b>Areawise Crops</b></a></li>
+<li><a href="crop_fert.jsp"><b>Soil based Fertilizers</b></a></li>
+
+
+<li><a href="cmdwiserpt.jsp"><b>Commiditywise </b></a></li>
+<li><a href="cmdmktwisedlystate.jsp"><b>Marketwise Daily</b></a></li>
+<li><a href="mktwisemonthly.jsp"><b>Marketwise Monthly</b></a></li>
+<li><a href="regngos.jsp"><b>AGO Registrations</b></a></li>
+
+</ul>
+
+</table>
+
+
+<ul id="libsubmenu4" class="ddsubmenustyle">
+
+<li><a href="UViewInbox.jsp"><b>Inbox</b></a></li>
+<li><a href="UViewOutbox.jsp"><b>Sent Mails</b></a></li>
+<li><a href="Usearch.jsp?role=user"><b>Search</b></a></li>
+
+</ul>
+
+<ul id="libsubmenu5" class="ddsubmenustyle">
+
+<li><a href="Changepassword.jsp?role=user"><b>Chagne Password</b></a></li>
+<li><a href="Changequestion.jsp?role=user"><b>Change Security Question</b></a></li>
+
+</ul>
+
+</body>
+</html>

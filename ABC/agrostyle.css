@@ -1,0 +1,152 @@
+.ag-text-gr {font-family:ms sans serif,verdana,arial;font-size:10px;line-height:17px;color:336600}
+.ag-text-gr a{font-family:ms sans serif,verdana,arial;font-size:10px;line-height:17px;color:336600; text-decoration:none;}
+.ag-link-bl a{font-family:ms sans serif,verdana,arial;font-size:10px;color:#285100;font-weight:bold;}
+a:hover{color:ff0000}
+.headlink a{font-family:ms sans serif,verdana,arial;font-size:14px;color:#285100;font-weight:bold;line-height:17px;}
+.headtext {font-family:ms sans serif,verdana,arial;font-size:14px;color:#285100;font-weight:bold;line-height:17px;}
+.headtext a{font-family:ms sans serif,verdana,arial;font-size:14px;color:#285100;font-weight:bold;line-height:17px;}
+
+.sub-headlink a{font-family:ms sans serif,verdana,arial;font-size:10px;color:#285100;line-height:17px;}
+.sub-headlink {font-family:ms sans serif,verdana,arial;font-size:10px;color:000000;line-height:17px;padding-left:20px;}
+
+H1 {font-family:ms sans serif,verdana,arial;font-size:14px;color:#285100;font-weight:bold;line-height:17px;padding-left:20px;}
+H1 a{font-family:ms sans serif,verdana,arial;font-size:14px;color:#285100;font-weight:bold;line-height:17px;}
+H2 {font-family:ms sans serif,verdana,arial;font-size:14px;color:#98942B;font-weight:bold;line-height:17px;padding-left:20px;}
+.offer a{font-family:ms sans serif,verdana,arial;font-size:10px;color:#285100;line-height:17px;}
+.offer {font-family:ms sans serif,verdana,arial;font-size:10px;color:000000;line-height:17px;}
+.offer {background-color:#EDFDD7}
+.blue a{font-family:ms sans serif,verdana,arial;font-size:10px;color:#285100;line-height:17px;font-weight:bold;}
+.blue {font-family:ms sans serif,verdana,arial;font-size:10px;color:000000;line-height:17px;font-weight:bold;}
+.blue {background-color:#A9D12E}
+.tlt a{color:336600;text-decoration:none;}
+.tlt a:hover{color:336600;text-decoration:none;}
+.offertext {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 11px; LINE-HEIGHT: 17px; 
+}
+.offertext A {
+	COLOR: #285100; font-weight:bold;
+}
+.offertext A:hover {
+	COLOR: #ff0000
+}
+.offertext1 {
+	COLOR: #000000; FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 11px; LINE-HEIGHT: 15px
+}
+.offerlink A {
+	FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 11px; color:336600;
+}
+.offerlink A:visited {
+	FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 11px; LINE-HEIGHT: 17px
+}
+.more-im-ad A {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 12px; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.more-im-ad {
+	COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 12px; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.more-im-ad A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.more-im {
+	BACKGROUND: #fcedc5; COLOR: #990000; FONT-FAMILY: arial; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.more-im A {
+	BACKGROUND: #fcedc5; COLOR: #990000; FONT-FAMILY: arial; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.more-im A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.ft-tdbg {
+	BACKGROUND-COLOR: #90c82f
+}
+.ft-linkhead A {
+	COLOR: #000000; FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.ft-linkhead A:hover {
+	TEXT-DECORATION: none
+}
+.ft-linkhead {
+	BACKGROUND-COLOR: #dffbba
+}
+.footer-lnk A {
+	COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.footer-lnk A:hover {
+	COLOR: #ff0000
+}
+.footer-lnk {
+	BACKGROUND-COLOR: #f1f1f1; COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.footer-lnk1 {
+	BACKGROUND-COLOR: #fffff6
+}
+.footer-lnk1 A {
+	COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.footer-lnk1 A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.footer-lnk1 {
+	COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.ft-linkhead1 {
+	BACKGROUND-COLOR: #d4fe9e
+}
+.ft-linkhead1 A {
+	COLOR: #000000; FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.ft-linkhead1 A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.footerlink A {
+	COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.footerlink {
+	COLOR: #000000; FONT-FAMILY: MS sans serif,verdana,arial; FONT-SIZE: 8px; LINE-HEIGHT: 15px
+}
+.footerlink A:hover {
+	COLOR: #ff0000
+}
+.title {
+	COLOR: #000000; FONT-FAMILY: ms sans serif,verdana,arial; FONT-SIZE: 15px; FONT-WEIGHT: bold; MARGIN-LEFT: 5px
+}
+.title A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.title A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.spice { font-family:ms sans serif,verdana,arial; font-size:12px; color:#285100; }
+H3 {font-family:ms sans serif,verdana,arial;font-size:18px;color:#285100;font-weight:bold;line-height:17px;}
+
+
+.footerlinks a{ COLOR: #999999; FONT-FAMILY: ms sans serif; LINE-HEIGHT: 17px; font-size:11px;text-decoration:none;}
+.footerlinks { COLOR: #999999; FONT-FAMILY: ms sans serif; LINE-HEIGHT: 17px; font-size:11px;text-decoration:none;}
+.fl-col {background-color:#DFF8DC}
+
+.l1 {color:#006600;font-size:14px;font-family:Arial;font-weight:bold;}
+.l2 {color: black;font-size:12px;font-family: Arial;}
+.l3 {color: black;font-size:12px;font-family:ms sans serif,Arial;font-weight:bold;}
+.l3 a{font-weight:normal;color:#006600;}
+
+.catalog-mem a{FONT-FAMILY:ms sans serif,arial;text-decoration:underline;font-size:12px;line-height:18px;font-weight:bold;color:#285100;}
+.catalog-mem {FONT-FAMILY:ms sans serif,arial;font-size:12px;line-height:18px;color:#285100;}
+
+.featured-show {font-family:arial;font-size:12px;line-height:19px; color:#000000;padding:10px;}
+.featured-show a{color:#006600;font-weight:bold;}
+
+.send1 {font-family:arial; font-size:17px; color:#fff; padding:5px 0px 0px 25px; font-weight:bold;}
+.send1 a {color: #ffffff; text-decoration: none}
+.send1 a:hover {color: #ffff00; text-decoration: underline}
+
+.add-txt {font-family:arial; font-size:11px; color:#000;padding-left:5px;}
+.add-txt a {color: #000000; text-decoration: none}
+.add-txt a:hover {color: #000000; text-decoration: underline}
+
+.lnks {font-family:arial; font-size:12px; color:#FFFF00;font-weight:bold; padding-right:5px;}
+.lnks a {color: #FFFF00; text-decoration: none}
+.lnks a:hover {color: #000000; text-decoration: underline}
+
+.add-lnks {font-family:arial; font-size:12px; color:#000; margin-bottom:5px;}
+.add-lnks a {color: #000; text-decoration: underline}
+.add-lnks a:hover {color: #000000; text-decoration: none}

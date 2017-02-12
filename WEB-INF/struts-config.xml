@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="State_infoForm" type="com.farmer.form.State_infoForm" />
+    <form-bean name="SoilType" type="com.farmer.form.SoilTypeForm" />
+    <form-bean name="cropt" type="com.farmer.form.CropForm" />
+    <form-bean name="ferti" type="com.farmer.form.FertForm" />
+    <form-bean name="DistrictInfoForm" type="com.farmer.form.DistrictInfoForm" />
+    <form-bean name="training" type="com.farmer.form.TrainingForm" />
+    <form-bean name="rtrains" type="com.farmer.form.RTrainingForm" />
+    <form-bean name="QueryForm" type="com.farmer.form.QueryForm" />
+    <form-bean name="RegisterForm" type="com.farmer.form.RegisterForm" />
+    <form-bean name="MarketForm" type="com.farmer.form.MarketForm" />
+    <form-bean name="CommodityForm" type="com.farmer.form.CommodityForm" />
+    <form-bean name="MarketReportForm" type="com.farmer.form.MarketReportForm" />
+    <form-bean name="LoginForm" type="com.farmer.form.LoginForm" />
+    <form-bean name="MessageForm" type="com.farmer.form.MessageForm" />
+    
+    
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action path="/state" type="com.farmer.action.State_infoAction" name="State_infoForm" scope="request" input="/AddStateInfo.jsp">
+      <forward name="success" path="/AddStateInfo.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/state1" type="com.farmer.action.updateStateinfo" name="State_infoForm" scope="request">
+      <forward name="success" path="/AddStateinfo.jsp" />
+      <forward name="failure" path="/updatestate_info.jsp" />
+    </action>
+    <action path="/soil" type="com.farmer.action.SoilTypeAction" name="SoilType" scope="request" input="/AddSoilType.jsp">
+      <forward name="success" path="/AddSoilType.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/crops" type="com.farmer.action.CropAction" name="cropt">
+      <forward name="success" path="/sbcrops.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    
+    
+
+    <action path="/AddDistrict" type="com.farmer.action.AddDistrictAction" name="DistrictInfoForm">
+      <forward name="success" path="/AddDistrict.jsp" />
+      <forward name="failure" path="/AddDistrict.jsp" />
+    </action>
+    
+    
+    <action path="/fert" type="com.farmer.action.FertAction" name="ferti">
+      <forward name="success" path="/Fert.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/training" type="com.farmer.action.TrainingAction" name="training">
+      <forward name="success" path="/traing.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+   
+    <action path="/rtrain" type="com.farmer.action.RTrainingAction" name="rtrains">
+      <forward name="success" path="/reqtraining.jsp"/>
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    
+    
+    
+    
+    
+    
+   
+    
+    <action path="/updatesoilaction" type="com.farmer.action.UpdateSoilAction" name="soiltype" scope="request">
+      <forward name="success" path="/viewsoils.jsp" />
+      <forward name="failure" path="/updatesoil.jsp" />
+    </action>
+    <action path="/deleteaction" type="com.farmer.action.DeleteSoilAction" name="soiltype" scope="request">
+      <forward name="success" path="/viewsoils.jsp" />
+      <forward name="failure" path="/viewsoils.jsp" />
+    </action>
+    
+        <action path="/updateDistrict" type="com.farmer.action.UpdateDistrictAction" name="DistrictInfoForm">
+      <forward name="success" path="/ViewDistricts.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/deletedistrict" type="com.farmer.action.DeleteDistrictAction" name="DistrictInfoForm" scope="request">
+      <forward name="success" path="/ViewDistricts.jsp" />
+      <forward name="failure" path="/ViewDistricts.jsp" />
+    </action>
+    <action path="/postquery" type="com.farmer.action.AddQueryAction" name="QueryForm" scope="request">
+      <forward name="success" path="/ViewQueries.jsp" />
+      <forward name="failure" path="/AddQuery.jsp" />
+    </action>
+    <action path="/register" type="com.farmer.action.RegisterAction" name="RegisterForm" scope="request">
+       <forward name="success" path="/Register.jsp?status=Registration Success" />
+      <forward name="failure" path="/index.jsp?status=Registration Failed" />
+    </action>
+    <action path="/ansqry" type="com.farmer.action.AnswerAction" name="QueryForm" scope="request">
+      <forward name="success" path="/PostAnswer.jsp" />
+      <forward name="failure" path="/ans2qry.jsp" />
+    </action>
+    <action path="/AddMarket" type="com.farmer.action.AddMarketAction" name="MarketForm" scope="request">  
+      <forward name="success" path="/AddMarketDetails.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action
+      input="/AddCommodity.jsp"
+      path="/addcommodity"
+      type="com.farmer.action.CommodityAction" name="CommodityForm" scope="request" validate="true">
+      <forward name="success" path="/AddCommodity.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/marketreport" type="com.farmer.action.MarketReportAction">
+      <forward name="success" path="/AddMarketReport.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/storemarket" type="com.farmer.action.MarketReportAction" name="MarketReportForm">
+      <forward name="success" path="/AddMarketReport.jsp" />
+      <forward name="failure" path="/storemarketdetails.jsp" />
+    </action>
+    <action path="/dailymkt" type="com.farmer.action.DailyMktAction">
+      <forward name="success" path="/r.jsp" />
+      <forward name="failure" path="/cmdmktwisedlystate.jsp" />
+    </action>
+    <action path="/login" type="com.farmer.action.LoginAction" name="RegisterForm" scope="request">
+      <forward name="user" path="/userhome.jsp" />
+      <forward name="admin" path="/adminhome.jsp" />
+      <forward name="failure" path="/LoginForm.jsp" />
+        <forward name="ngo" path="/ngohome.jsp"/>
+    </action>
+    <action path="/compose" type="com.farmer.action.ComposeAction">
+      <forward name="success" path="/adminhome.jsp?status=Your message has been sent" />
+      <forward name="failure" path="/adminhome.jsp?status=Message sent failed" />
+    </action>
+    
+    <action path="/ucompose" type="com.farmer.action.UComposeAction">
+      <forward name="success" path="/userhome.jsp?status=Your message has been sent" />
+      <forward name="failure" path="/userhome.jsp?status=Message sent failed" />
+    </action>
+    <action path="/ncompose" type="com.farmer.action.NComposeAction">
+      <forward name="success" path="/ngohome.jsp?status=Your message has been sent" />
+      <forward name="failure" path="/ngohome.jsp?status=Message sent failed" />
+    </action>
+    
+    <action path="/deletemsg" type="com.farmer.action.DeleteMsgAction">
+      <forward name="admin" path="/adminhome.jsp?status=message is deleted" />
+      <forward name="user" path="/userhome.jsp?status=message is deleted" />
+      <forward name="ngo" path="/ngohome.jsp?status=message is deleted" />
+       <forward name="adminf" path="/adminhome.jsp?status=message is deleted" />
+      <forward name="userf" path="/userhome.jsp?status=message is deleted" />
+      <forward name="ngof" path="/ngohome.jsp?status=message is deleted" />
+      
+    </action>
+    <action path="/regngos" type="com.farmer.action.RegNGOAction" name="RegisterForm" scope="request">
+      <forward name="success" path="/regngos.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/deletemarket" type="com.farmer.action.DeleteMarketAction" name="MarketForm" scope="request">
+      <forward name="success" path="/ViewMarketDetails.jsp" />
+      <forward name="failure" path="/ViewMarketDetails.jsp" />
+    </action>
+
+    <action path="/ChangePassword" type="com.farmer.action.ChangePasswordAction" name="RegisterForm" scope="request">
+      <forward name="admin" path="/adminhome.jsp" />
+      <forward name="user" path="/userhome.jsp" />
+      <forward name="ngo" path="/ngohome.jsp" />
+      <forward name="failure" path="/LoginForm.jsp"/>
+    </action>
+    <action path="/ChangeQuestion" type="com.farmer.action.ChangeQuestionAction" name="RegisterForm" scope="request">
+       <forward name="admin" path="/adminhome.jsp" />
+      <forward name="user" path="/userhome.jsp" />
+      <forward name="ngo" path="/ngohome.jsp" />
+      <forward name="failure" path="/LoginForm.jsp"/>
+   </action> 
+     <action path="/updatemarket" type="com.farmer.action.UpdateMarketAction" name="MarketForm">
+      <forward name="success" path="/ViewMarketDetails.jsp" />
+      <forward name="failure" path="/updatemarket.jsp" />
+    </action>
+     <action path="/updatecommodity" type="com.farmer.action.UpdateCommodityAction" name="CommodityForm">
+      <forward name="success" path="/ViewCommodities.jsp" />
+      <forward name="failure" path="/updatecommodity.jsp" />
+    </action>
+    <action path="/deletecommodity" type="com.farmer.action.DeleteCommodityAction" name="CommodityForm" scope="request">
+      <forward name="success" path="/ViewCommodities.jsp" />
+      <forward name="failure" path="/ViewCommodities.jsp" />
+    </action>
+    <action path="/RecoverPassword" type="com.farmer.action.RecoverPasswordAction" name="RegisterForm" scope="session">
+      <forward name="success" path="/LoginForm.jsp"/>
+      <forward name="failure" path="/RecoverPassword.jdp?status=Entries not Matched... Try Again" />
+    </action>
+     <action path="/upfert" type="com.farmer.action.UpFert" name="ferti" scope="request">
+      <forward name="success" path="/updateFert.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/upcropa" type="com.farmer.action.UpCropAction" name="cropt">
+      <forward name="success" path="/upcrops.jsp" />
+      <forward name="failure" path="/index.jsp" />
+    </action>
+    <action path="/DeleteMsgAction" type="com.farmer.action.DeleteMsgAction" name="MessageForm" scope="request">
+      <forward name="success" path="/ViewInbox.jsp" />
+      <forward name="failure" path="/Viewinbox.jsp" />
+    </action>
+    <action path="/UDeleteMsgAction" type="com.farmer.action.UDeleteMsgAction" name="MessageForm" scope="request">
+      <forward name="success" path="/UViewInbox.jsp" />
+      <forward name="failure" path="/UViewinbox.jsp" />
+    </action>
+    <action path="/NDeleteMsgAction" type="com.farmer.action.NDeleteMsgAction" name="MessageForm" scope="request">
+      <forward name="success" path="/NViewInbox.jsp" />
+      <forward name="failure" path="/NViewinbox.jsp" />
+    </action>
+  </action-mappings>
+
+  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+
